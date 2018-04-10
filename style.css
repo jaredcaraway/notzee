@@ -1,30 +1,29 @@
 .die {
-    display: block;
-    width: 128px;
-    height: 128px;
-    margin-bottom: 20px;
-  }
-  
-  .one {
-    background-image: url('https://image.ibb.co/geUo6c/1_dot.png');
-  }
-  
-  .two {
-    background-image: url('https://image.ibb.co/jFkT6c/2_dots.png');
-  }
-  
-  .three {
-    background-image: url('https://image.ibb.co/nFKo6c/3_dots.png');
-  }
-  
-  .four {
-    background-image: url('https://image.ibb.co/hWaT6c/4_dots.png');
-  }
-  
-  .five {
-    background-image: url('https://image.ibb.co/cj8RsH/5_dots.png');
-  }
-  
-  .six {
-    background-image: url('https://image.ibb.co/hX84ex/6_dots.png');
-  }
+  display: block;
+  width: 128px;
+  height: 128px;
+}
+
+.one {
+  background-image: url('assets/1_dot.png');
+}
+
+.two {
+  background-image: url('assets/2_dots.png');
+}
+
+.three {
+  background-image: url('assets/3_dots.png');
+}
+
+.four {
+  background-image: url('assets/4_dots.png');
+}
+
+.five {
+  background-image: url('assets/5_dots.png');
+}
+
+.six {
+  background-image: url('assets/6_dots.png');
+}
