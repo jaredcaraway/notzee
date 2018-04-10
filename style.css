@@ -4,6 +4,10 @@
   height: 128px;
 }
 
+button#roll {
+  margin-top: 20px;
+}
+
 .one {
   background-image: url('assets/1_dot.png');
 }
