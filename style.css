@@ -1,3 +1,7 @@
+body {
+  background: url('assets/cubes.png');
+}
+
 .die {
   display: block;
   width: 128px;
