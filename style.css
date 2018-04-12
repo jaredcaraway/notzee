@@ -6,6 +6,7 @@ body {
   display: block;
   width: 128px;
   height: 128px;
+  margin: 15px;
 }
 
 .container {
@@ -16,7 +17,7 @@ body {
 }
 
 button#roll {
-  margin-top: 20px;
+  margin: 15px;
 }
 
 .one {
