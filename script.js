@@ -1,56 +1,45 @@
-var container = document.querySelector(".die");
+var dieContainers = document.querySelectorAll(".die");
 var rollButton = document.querySelector("#roll");
 
-var faces = {
-      1: 'one',
-      2: 'two',
-      3: 'three',
-      4: 'four',
-      5: 'five',
-      6: 'six'
+var images = {
+      1: 'assets/1_dot.png',
+      2: 'assets/2_dots.png',
+      3: 'assets/3_dots.png',
+      4: 'assets/4_dots.png',
+      5: 'assets/5_dots.png',
+      6: 'assets/6_dots.png'
 }
 
 class Die {
-  constructor(val) {
-    this.roll(); 
-    
-    this.lastVal = null;
-    this.lastFace = null;
+  constructor(val, dieContainer) {
+    this.dieContainer = dieContainer;
+    this.roll();
     this.locked = false;
   }
   
   roll() {
     this.currentVal = Math.floor(Math.random() * 6) + 1;
-    this.currentFace = faces[this.currentVal];
     this.showDie();
   }
   
-  rollAgain() {
-    this.lastVal = this.currentVal;
-    this.lastFace = this.currentFace;
-    
-    this.roll();
-  }
-  
   showDie() {
-    if (this.lastFace) {
-      container.classList.replace(this.lastFace, this.currentFace);
-    } else {
-      container.classList.add(this.currentFace);
-    }
+    this.dieContainer.src = images[this.currentVal];
   }
 }
 
-// let dice = [];
-// for (let i = 0; i < 5; i++) {
-//   dice.push(new Die(Math.floor(Math.random() * 6) + 1));
-// }
-
-var die = new Die();
-console.log(die);
+let dice = [];
+for (let i = 0; i < 5; i++) {
+  dice.push(
+    new Die(
+      Math.floor(Math.random() * 6) + 1,
+      dieContainers[i]
+  ));
+}
+console.log(dice);
 
 rollButton.addEventListener("click", function() {
-  die.rollAgain();
-  console.log(die);
+  dice.forEach( (die) => {
+    die.roll();
+    console.log(die);
+  });
 });
-

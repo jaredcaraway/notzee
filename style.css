@@ -6,13 +6,6 @@ h1 {
   text-align: center;
 }
 
-.die {
-  display: block;
-  width: 128px;
-  height: 128px;
-  margin: 15px;
-}
-
 .container {
   background-color: rgba(0, 0, 0, 0.25);
   border: 1px solid black;
@@ -22,28 +15,4 @@ h1 {
 
 button#roll {
   margin: 15px;
-}
-
-.one {
-  background-image: url('assets/1_dot.png');
-}
-
-.two {
-  background-image: url('assets/2_dots.png');
-}
-
-.three {
-  background-image: url('assets/3_dots.png');
-}
-
-.four {
-  background-image: url('assets/4_dots.png');
-}
-
-.five {
-  background-image: url('assets/5_dots.png');
-}
-
-.six {
-  background-image: url('assets/6_dots.png');
 }
