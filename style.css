@@ -2,6 +2,10 @@ body {
   background: url('assets/cubes.png');
 }
 
+h1 {
+  text-align: center;
+}
+
 .die {
   display: block;
   width: 128px;
