@@ -27,6 +27,7 @@ class Die {
   }
 }
 
+// Create array of five new die objects initialized to random values
 let dice = [];
 for (let i = 0; i < 5; i++) {
   dice.push(
@@ -41,5 +42,11 @@ rollButton.addEventListener("click", function() {
   dice.forEach( (die) => {
     die.roll();
     console.log(die);
+  });
+});
+
+dice.forEach( (die) => {
+  die.dieContainer.addEventListener("click", function() {
+    die.dieContainer.classList.toggle("locked");
   });
 });
